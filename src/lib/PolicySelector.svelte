@@ -267,7 +267,7 @@ function downloadTemplate() {
                 {
                   Effect: 'Allow',
                   Principal: {
-                    Arn: TrustedRoleMap[$flexeraZone].roleArn
+                    AWS: TrustedRoleMap[$flexeraZone].roleArn
                   },
                   Action: 'sts:AssumeRole',
                   Condition: {
